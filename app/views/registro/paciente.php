@@ -1,0 +1,2 @@
+Estoy registrando un paciente
+
