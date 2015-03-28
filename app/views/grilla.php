@@ -2,7 +2,7 @@
     <head>
         <title>Bienvenido Responsive</title>
         <link rel="stylesheet" href="../../public/assets/css/style.css" type="css"/>
-        <link rel="stylesheet" href="../../public/assets/libs/bootstrap-3.3.2-dist/css/bootstrap.min.css" type="css"/>
+        <link rel="stylesheet" href="../../public/assets/librs/bootstrap-3.3.2-dist/css/bootstrap.min.css" type="css"/>
     </head>
     <body>
         <div class="conteiner">

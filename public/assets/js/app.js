@@ -47,8 +47,10 @@ var persona ={
         for (i = 0; i < ps.length; i++){
             ps[i].style.display = 'none';
         }*/
-        
-         $("p").hide;
+       /// $("button").click(function(){
+                //$("p").hide();
+       /// });
+        $("p").toggle();
      },
      
      
@@ -68,6 +70,10 @@ var persona ={
        /*  $("#password").complexify({}, callback(valid, 10){
              alert("Password complexity: " + 10);
             });*/
+     },
+     
+     Calendar:function(){
+         $('.datepicker').pickadate();
      }
  };
 
