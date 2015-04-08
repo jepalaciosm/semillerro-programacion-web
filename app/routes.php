@@ -25,5 +25,19 @@ Route::get('/test', function()
 	return View::make('clase3');
 });
 
+Route::get('/Smarty', function()
+{
+	return View::make('ejemplosmarty');
+});
+
+Route::get('/perfil', function()
+{
+    return View::make('perfil.perfil');
+    //Se pasan variables quemadas a la vista
+	//return View::make('masterpage.template')
+          //      ->with("nombre","John")
+          //      ->with("edad","23");
+});
+
 Route::controller('personal','PersonalController');
 Route::controller('clase','Clase2Controller');
