@@ -39,9 +39,9 @@
             <li><a href="#"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></a></li>
             <li class="divider"></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Salir<span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Opciones<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>Salir</a></li>
+            <li><a href="{url('/logout')}"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>Salir</a></li>
           </ul>
         </li>
       </ul>

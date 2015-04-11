@@ -17,8 +17,5 @@
     <p><br>
     </div>
 {/capture}
-{capture assign='nombre'}
-    John    
-{/capture}
 
 {include file='../masterpage/template.tpl' layout="two_columns"} 
