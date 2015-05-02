@@ -32,8 +32,10 @@ Route::get('/Smarty', function()
 
 Route::get('/perfil',array('before' => 'auth', function()
 {
+    $publicacion = publicacion::orderBy('id','desc')->get();
     return View::make('perfil.perfil')
-            ->with("nombre",Auth::user()->nombre);
+            ->with("nombre",Auth::user()->nombre)
+            ->with("publicaciones",$publicacion);
     //Se pasan variables quemadas a la vista
 	//return View::make('masterpage.template')
           //      ->with("nombre","John")
@@ -75,3 +77,4 @@ Route::get('/logout', function(){
         
 Route::controller('personal','PersonalController');
 Route::controller('clase','Clase2Controller');
+Route::controller('publicacion','PublicacionController');

@@ -1,12 +1,12 @@
 ///alert("Hola mundo");
  //edad = 21
 
-function mayor_edad(edad){
+/*function mayor_edad(edad){
     if(edad > 18){
         alert("usted es mayor de edad");
         laction.href="http//www.google.com";
     }
-}
+}*/
 
 //name= prompt("Ingrese su nombre");
 //alert("Usted se llama" +name);
@@ -18,16 +18,38 @@ while(años < 18){
 }*/
 
 /* JSON (JavaScript Object Notation*/
-var persona ={
+/*var persona ={
     nombre: "John",
     apellido:"Palacios",
     lugar_nacimiento:"Bolivar",
     interes:['programación','futbol','aventura']
+};*/
+var fb ={
+    comentar:function(id){
+        var comentario = $("#comentario-"+id);
+        if(comentario.val()!==""){
+         ///   alert(comentario.val());
+            $.ajax({
+            url: 'publicacion/comentar',
+            type: 'POST',
+            async: true,
+            data: {
+                usuario :1,
+                comentario : comentario.val()
+            },
+            success: procesaRespuesta,
+            error: muestraError
+});
+        }else{
+            alert("Este campo es obligatorio");
+        }
+        
+    }
 };
 
 /// alert(persona.nombre);
  
- var managerScreen= managerScreen ||{};
+ /*var managerScreen= managerScreen ||{};
  managerScreen={
      cambiarColorFondo: function(color){
          document.body.style.background=color;
@@ -50,7 +72,7 @@ var persona ={
        /// $("button").click(function(){
                 //$("p").hide();
        /// });
-        $("p").toggle();
+     /*   $("p").toggle();
      },
      
      
@@ -70,13 +92,13 @@ var persona ={
        /*  $("#password").complexify({}, callback(valid, 10){
              alert("Password complexity: " + 10);
             });*/
-     },
+    /* },
      
      Calendar:function(){
          $('.datepicker').pickadate();
      }
  };
 
-var ms= managerScreen;
+var ms= managerScreen;*/
 
 
